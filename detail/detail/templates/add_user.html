@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User detail</title>
+  </head>
+  <body>
+    {% if message %}
+        <p style="color: red">{{ message }}</p>
+    {% endif %}
+    <form method="post">
+        <label for="">Name  :</label>
+        <br>
+        <input type="text" name="name" value="">
+        <br><br>
+
+        <label for="">Year of birth  :</label>
+        <br>
+        <input type="number" name="year" value="">
+        <br><br>
+
+        <label for="">City  :</label>
+        <br>
+        <input type="text" name="city" value="">
+        <br><br>
+
+        <label for="">Problem  :</label>
+        <br>
+        <input type="text" name="problem" value="">
+        <br><br>
+
+        <button type="sybmit" name="detail">Submit detail</button>
+        <br>
+        OR
+        <br>
+
+    </form>
+    <form method="post">
+        <button type="submit" name="search"><a style="text-decoration: none" href="{{ url_for('search') }}">Search existance user</a> </button>
+    </form>
+  </body>
+</html>

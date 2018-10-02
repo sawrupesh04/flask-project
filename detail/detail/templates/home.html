@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if message %}
+        <p style="color: green">{{ message }}</p>
+        <br>
+        <br>
+    {% endif %}
+
+    <a href="{{ url_for('user_detail') }}">Add new user</a>
+    <br>
+    <br>OR<br>
+
+
+    <a href="{{ url_for('search') }}">Find existance user</a>
+</body>
+</html>
