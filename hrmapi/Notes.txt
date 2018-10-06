@@ -1,0 +1,10 @@
+project url :
+
+https://codehandbook.org/flask-restful-api-using-python-mysql/
+
+https://codehandbook.org/restful-api-using-python-flask-mysql-part-2/
+
+https://github.com/codehandbook/RESTfulApiUsingPythonFlask
+
+
+mysql connector :
