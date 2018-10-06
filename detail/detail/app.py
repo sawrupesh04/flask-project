@@ -41,10 +41,10 @@ def search():
     elif request.method == 'POST':
         name = request.form['search']
         if name:
-            name1 = r.get(name+':name').decode()
-            year1 = r.get(name + ':year').decode()
-            city1 = r.get(name + ':city').decode()
-            problem1 = r.get(name + ':problem').decode()
+            name1 = r.get(name+':name')
+            year1 = r.get(name + ':year')
+            city1 = r.get(name + ':city')
+            problem1 = r.get(name + ':problem')
             return render_template('user_detail.html', name=name1, year=year1, city=city1, problem=problem1)
         else:
             return render_template('search.html', message='Field are required!!!')
